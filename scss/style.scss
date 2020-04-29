@@ -1,0 +1,21 @@
+@import "./variables";
+@import "./header";
+@import "./about";
+@import "./slideshow";
+@import "./quotes";
+
+//the plan going forward: utilzing media queries to change FONT SIZE so that everything fits, absolute positioning in DESKTOP, can use flex-direction/others in each query
+
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    background-color: color(dark);
+}
+
+.footer{
+    display: flex;
+    height: 40vh;
+    background-color: color(dark);
+  }

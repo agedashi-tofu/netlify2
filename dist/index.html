@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <div class="header">
+        <div class="headerborder">
+            <div class="headerborder2">
+                <div class="header1">
+                        <div class="header2">
+                            <span class="headerprimary">Toronto</span>
+                            <span class="headersecondary">A city of beauty and opportunity</span>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="about-toronto">
+            <span class="title">What's so special about Toronto?</span>
+            <div class="text">
+                <section class="p1">One of the largest metropolitan cities in the world, Toronto offers a multitude of activities and attractions, from its countless museums to its many green parks. The highly iconic CN Tower graces its skyline, and in combination with its natural aesthetics such as Lake Ontario, Toronto is one of the most unique and beautiful cities in the world.</section>
+            </div>
+            
+            <div class="gallery">
+                <img class="image-lake" src="css/img/lake-ontario.jpeg" alt="">     
+                <img class="image-bar" src="css/img/bars.jpeg" alt="">
+                <img class="image-caesar" src="css/img/caesar.jpeg" alt="">
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <div class="header3">
+        <div class="slideshow">
+            <div class="slideshow-title">Many Places to Visit</div>
+            <div class="slideshow-gallery">
+                <button class="display-left" onclick="plusDivs(-1)">&#10094;</button>
+
+                <img class="mySlides" src="css/img/cn-tower-2.jpeg" style="width:60%">
+                <img class="mySlides" src="css/img/parks.jpeg" style="width:60%">
+                <img class="mySlides" src="css/img/stadium.jpeg" style="width:60%">
+                <img class="mySlides" src="css/img/toronto chinatown.jpg" style="width:60%">
+
+                <button class="display-right" onclick="plusDivs(+1)">&#10095;</button>
+            </div>
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+                
+                function plusDivs(n) {
+                  showDivs(slideIndex += n);
+                }
+                
+                function showDivs(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  if (n > x.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  x[slideIndex-1].style.display = "block";  
+                }
+            </script>
+        </div>
+    </div>
+
+    <div class="header4">
+        <div class="section4">
+
+            <div class="gallery2">
+                <img class="gigachad1" src="css/img/gigachad1.png" alt="">
+                <img class="gigachad2" src="css/img/gigachad2.jpg" alt="">
+                <img class="gigachad3" src="css/img/gigachad3.jpg" alt="">
+            </div>
+
+            <div class="quotebox">
+                <div class="quote1">"Yep, this city's pretty damn dope. Chad approved." - Chad</div>
+                <div class="quote2">"Gotta agree with my King there. I love visiting the green parks and admiring the museum art. Toronto is pretty based." - Brad</div>
+                <div class="quote3">"My King and Chief are right--this city is pretty awesome. While the nightlife is fun, I think the best part is the diversity. I love visiting Chinatown." - Thad</div>
+            </div>
+        </div>    
+    </div>
+    
+    <div class="footer">
+        <div class="text"></div>
+    </div>
+
+</body>
+
+
+</html>

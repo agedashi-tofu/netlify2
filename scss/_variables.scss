@@ -1,0 +1,38 @@
+$colors: (
+  primary: #e7c34e,
+  primary-light: #e6c877,
+  primary-dark: #8d7636,
+  secondary: #f3e9d3,
+  dark: #181818
+);
+
+$phone: 400px;
+$tablet: 900px;
+$laptop: 1100px;
+$desktop: 1100px;
+ 
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+@mixin phone {
+  @media (min-width: #{$phone}) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media (min-width: #{$laptop}) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
